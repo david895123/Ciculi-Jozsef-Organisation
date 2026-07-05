@@ -1,0 +1,27 @@
+
+:root{
+    /*Page colors*/
+    --color-white-background: #F4F3F2;
+    --color-primary: #0A7C6E;
+    --color-secondary: #ADE5ED;
+    --color-tertiary: #F59E0B;
+    --color-footer-background: #2C302E;
+    
+    /*Font colors*/
+    --color-text-primary-dark: #151515;
+    --color-text-secondary-darl: #3E3D3D;
+    --color-text-primary-light: #F2F2F2;
+    --color-text-secondary-light: #EFEFEF;
+    --color-text-tertiary-light: #B5B5B5;
+
+    /*Fonts*/
+    --font-title: 'Montserrat';
+    --font-text: 'Inter';
+    --font-size-title: 6rem;
+    --font-size-text: 2rem;
+    --font-size-subtitle: 2.5rem;    
+    --font-size-nav: 1.5rem;
+    --font-size-legal: 0.75rem;
+    --font-size-email: 0.9rem;
+
+}

@@ -8,11 +8,14 @@
     </head> 
 
     <body>
-        <h1>Ciculi Jozsef Alapitvany</h1>
+        <h1 data-i18n="main.hero.title">Ciculi </h1>
 
+        <select onchange="loadLanguage(this.value)">
+            <option value="en">EN</option>
+            <option value="ro">RO</option>
+            <option value="hu">HU</option>
+        </select>
     </body>
-
-
-
-
+    
+     <script src="js/i18n.js"></script>
 </html>
