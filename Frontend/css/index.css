@@ -1,4 +1,74 @@
 #hero
 {
+    height: 100vh;
+    display: flex;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#hero::before
+{
+    content: ' ';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    background-image: url('../assets/pictures/ciculi_hero.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.5);
+    z-index: 0;
     
+}
+
+#hero-content
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 40px 24px;
+    z-index: 1;
+    padding: 8vh;
+}
+
+#hero-top
+{   
+    margin-top: 25vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+#hero-content h1
+{
+    font-size: var(--font-size-title);
+    color: var(--color-text-secondary-light);
+    letter-spacing: 8%;
+}
+
+#hero-content button
+{
+    font-size: var(--font-size-text);
+    background-color: var(--color-tertiary);
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-color: transparent;
+    border-radius: 50px;
+    
+}
+
+#hero-content h2
+{
+    font-size: var(--font-size-text);
+    color: var(--color-text-tertiary-light);
 }
