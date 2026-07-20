@@ -34,7 +34,7 @@
     width: 100%;
     padding: 40px 24px;
     z-index: 1;
-    padding: 8vh;
+    padding: 7vh;
 }
 
 #hero-top
@@ -44,7 +44,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    gap: 5vh;
+    gap: 4vh;
 }
 
 #hero-content h1

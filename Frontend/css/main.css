@@ -5,7 +5,7 @@
     --color-primary: #0A7C6E;
     --color-secondary: #ADE5ED;
     --color-tertiary: #F59E0B;
-    --color-footer-background: #2C302E;
+    --color-footer-background: #141615;
     
     /*Font colors*/
     --color-text-primary-dark: #151515;
@@ -13,16 +13,17 @@
     --color-text-primary-light: #F2F2F2;
     --color-text-secondary-light: #EFEFEF;
     --color-text-tertiary-light: #B5B5B5;
+    --color-text-legal: #9F9A9A;
 
     /*Fonts*/
     --font-title: 'Montserrat';
     --font-text: 'Inter';
-    --font-size-title: 6rem;
-    --font-size-text: 2rem;
-    --font-size-subtitle: 2.5rem;    
-    --font-size-nav: 1.5rem;
-    --font-size-legal: 0.75rem;
-    --font-size-email: 0.9rem;
+    --font-size-title: 4.8rem;
+    --font-size-text: 1.6rem;
+    --font-size-subtitle: 2rem;    
+    --font-size-nav: 1.2rem;
+    --font-size-legal: 0.6rem;
+    --font-size-email: 0.75rem;
 
 }
 
@@ -52,7 +53,7 @@ body
     top: 0;
     left: 0;
     z-index: 9999;
-    height: 50px;
+    height: 40px;
 }
 
 #navbarText
@@ -87,9 +88,20 @@ body
 
 .logo
 {
-    background-color: var(--color-tertiary);
-    margin-left: 20px;
-    margin-right: 40px;
+    display: flex;
+    justify-content: center;
+    color: var(--color-text-secondary-light);
+    margin-left: 10px;
+   
+    
+}
+
+.logo img
+{   
+    display: flex;
+
+    height: 30px;
+    width: auto;
 }
 
 #languages
@@ -107,8 +119,8 @@ body
 #languages button
 {
     border-color: transparent;
-    width: 40px;
-    height: 30px;
+    width: 36px;
+    height: 24px;
     background: none;
 }
 
@@ -130,10 +142,87 @@ body
   opacity: 0.85;
 }
 
+.footer
+{
+    background-color: var(--color-footer-background);
+   padding-left: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.footer h3
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: var(--font-size-nav);
+    color: var(--color-text-tertiary-light);
+    letter-spacing: 30%;
+    
+}
+
+#footer-left
+{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+    
+}
+
+.footer h4
+{
+    font-size: var(--font-size-email);
+    color: var(--color-text-tertiary-light);
+    letter-spacing: 5%;
+}
+
+#logos
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#ig
+{
+    width: 20px;
+    height: 20px;
+    color: #FCAF45;
+}
+
+#yt
+{   
+    width: 22px;
+    height: 22px;
+    color: #CD201F;
+}
+
+#fb
+{
+    width: 20px;
+    height: 20px;
+    color: #1877F5;
+}
+
+#legal
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer h6
+{
+    font-size: var(--font-size-legal);
+    color: var(--color-text-legal);
+    letter-spacing: 8%;
+}
+
 @media (min-width: 768px) {
     .navbar
     {
        
-        height: 60;
+        height: 50;
     }
 }
