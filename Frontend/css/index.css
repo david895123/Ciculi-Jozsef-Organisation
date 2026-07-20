@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
 #hero
 {
     height: 100vh;
@@ -52,10 +57,14 @@
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
     letter-spacing: 8%;
+    text-align: center;
+    font-family: "Montserrat";
 }
 
-#hero-content button
+#join-button
 {
+    text-decoration: none;
+    color: var(--color-text-secondary);
     font-size: var(--font-size-text);
     background-color: var(--color-tertiary);
     padding-left: 2%;
@@ -64,11 +73,33 @@
     padding-bottom: 1%;
     border-color: transparent;
     border-radius: 50px;
+    transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+
     
+}
+
+#join-button:hover
+{
+    background-color: var(--color-accent);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+#join-button:active
+{
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#join-button:focus-visible
+{
+    outline: 2px solid var(--color-primary-dark);
+    outline-offset: 2px;
 }
 
 #hero-content h2
 {
     font-size: var(--font-size-text);
     color: var(--color-text-tertiary-light);
+    text-align: center;
 }
