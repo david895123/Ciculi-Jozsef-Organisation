@@ -1,0 +1,48 @@
+.hero
+{
+    height: 100vh;
+    display: flex;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before
+{
+    content: ' ';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    bottom: -20px;
+    right: -20px;
+    background-image: url('../assets/pictures/2-ciculi-jozsef-konferencia.jpeg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px) brightness(0.5);
+    z-index: 0;
+    
+}
+
+#hero-content
+{
+    margin-top: 30vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 40px 24px;
+    z-index: 1;
+    padding: 7vh;
+    
+}
+
+#hero-content h1
+{
+    font-size: var(--font-size-title);
+    color: var(--color-text-secondary-light);
+    letter-spacing: 8%;
+    text-align: center;
+    font-family: "Montserrat";
+}
