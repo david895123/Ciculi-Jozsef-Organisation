@@ -46,3 +46,59 @@
     text-align: center;
     font-family: "Montserrat";
 }
+
+.event
+{
+    height: 100vh;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-bottom: 10%;
+    padding-top: 7%;
+}
+
+.content
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.content img
+{
+    height: 70%;
+    width: auto;
+}
+
+.text
+{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+    margin-top: 15%;
+}
+
+.text h3
+{
+    font-size: var(--font-size-subtitle);
+    letter-spacing: 10%;
+    margin-bottom: 2%;
+}
+
+.text h5
+{
+    font-size: var(--font-size-smalltext);
+    letter-spacing: 5%;
+}
+
+.text h4
+{
+    margin-top: 10%;
+    font-size: var(--font-size-text);
+    letter-spacing: 5%;
+}
+
+
+
