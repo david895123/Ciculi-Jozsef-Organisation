@@ -20,6 +20,7 @@
     --font-title: 'Montserrat';
     --font-text: 'Inter';
     --font-size-title: 4.8rem;
+    --font-size-medium-title: 2.5rem;
     --font-size-text: 1.6rem;
     --font-size-subtitle: 2rem;    
     --font-size-nav: 1.2rem;
@@ -296,6 +297,8 @@ body
     color: var(--color-text-legal);
     letter-spacing: 8%;
 }
+
+
 
 @media (min-width: 768px) {
     .navbar

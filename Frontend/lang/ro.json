@@ -2,7 +2,7 @@
     "nav.aboutus": "Despre noi",
     "nav.events": "Evenimente",
     "nav.departments": "Departamente",
-    "nav.awards": "Premiile",
+    "nav.awards": "Premii",
 
     "main.hero.title": "Organizația Ciculi József",
     "main.hero.button": "Csatlakozz!",
@@ -17,5 +17,14 @@
 
     "footer.title": "Ciculi József să fie cu tine!",
     "footer.email": "ciculijozsef@gmail.com",
-    "footer.legal": "© 2026 Ciculi József Alapitvány"
+    "footer.legal": "© 2026 Ciculi József Alapitvány",
+
+    "aboutus.title": "Despre noi",
+
+    "events.title": "Evenimente",
+
+    "departments.title": "Departamente",
+
+    "awards.title": "Premii"
+
 }

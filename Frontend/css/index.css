@@ -103,3 +103,31 @@
     color: var(--color-text-tertiary-light);
     text-align: center;
 }
+
+#event
+{
+    background-color: var(--color-secondary);
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#content
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 5vh ;
+
+}
+
+#content img
+{
+    height: 50vh;
+    width: auto;
+}
