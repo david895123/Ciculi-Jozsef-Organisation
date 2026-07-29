@@ -22,8 +22,34 @@
     "aboutus.title": "About Us",
 
     "events.title": "Events",
+    "events.ciculi2.title": "II. Ciculi József Conference",
+    "events.ciculi2.date": "2026 may 29",
+    "events.ciculi3.description": "A Második Ciculi József Konferencia alkalmával átadtuk a Ciculi József Alapívány Zilahi részlegének vezetői pozícióit Balabás Róbertnek és Kulcsar Orsolyának.",
+    "events.ciculi.title": "First Ciculi József Conference",
+    "events.ciculi.date": "2025 may 30",
+    "events.ciculi.description": "Az Első Ciculi József Konferencia alkalmával bevezettük a Ciculi József Díjat amivel a közösségünk kiemelkedő tagjait jutalmaztuk meg.",
+
+
 
     "departments.title": "Departaments",
+    
+    "departments.ciculi.title": "Ciculi József Organisation",
+    "departments.ciculi.first.name": "Mihály Dávid-Zsolt",
+    "departments.ciculi.first.post": "President, Founder",
+    "departments.ciculi.second.name": "Ciculi József",
+    "departments.ciculi.secpnd.post": "Honorary President",
+
+    "departments.zalau.title": "Ciculi József Alapívány Zilahi Részlege",
+    "departments.zalau.first.name": "Balabás Róbert",
+    "departments.zalau.first.post": "President",
+    "departments.zalau.second.name": "Kulcsar Orsolya",
+    "departments.zalau.second.post": "Vicepresident",
+
+    "departments.cluj.title": "Ciculi József Alapívány Kolozsvári Részlege",
+    "departments.cluj.first.name": "Mihály Dávid-Zsolt",
+    "departments.cluj.first.post": "President",
+    "departments.cluj.second.name": "Demjen Nicole Klarisza",
+    "departments.cluj.second.post": "Vicepresident",
 
     "awards.title": "Awards"
 }
