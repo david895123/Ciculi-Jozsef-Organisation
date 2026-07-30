@@ -1,3 +1,13 @@
+*
+{
+    --color-first: hsl(23,42%,50%) ;
+    --color-second: hsl(212,35%,35%);
+
+    --events-font-title: 1.8rem;
+    --events-font-date: 0.8rem;
+    --events-font-text: 1rem;
+}
+
 .hero
 {
     height: 100vh;
@@ -5,6 +15,7 @@
 
     position: relative;
     overflow: hidden;
+    margin-bottom: 5%;
 }
 
 .hero::before
@@ -49,11 +60,22 @@
 
 .event
 {
-    height: 100vh;
+    height: 70vh;
+
+    padding-bottom: 5%;
+    
+}
+
+.content-2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: var(--color-second);
     padding-left: 12%;
     padding-right: 12%;
-    padding-bottom: 10%;
-    padding-top: 7%;
+    
 }
 
 .content
@@ -62,10 +84,12 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    
+    background-color: var(--color-first);
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
-.content img
+.event img
 {
     height: 70%;
     width: auto;
@@ -82,21 +106,24 @@
 
 .text h3
 {
-    font-size: var(--font-size-subtitle);
+    color: var(--color-text-primary-light);
+    font-size: var(--events-font-title);
     letter-spacing: 10%;
     margin-bottom: 2%;
 }
 
 .text h5
 {
-    font-size: var(--font-size-smalltext);
+    color: var(--color-text-secondary-light);
+    font-size: var(--events-font-date);
     letter-spacing: 5%;
 }
 
 .text h4
 {
+    color: var(--color-text-secondary-light);
     margin-top: 10%;
-    font-size: var(--font-size-text);
+    font-size: var(--events-font-text);
     letter-spacing: 5%;
 }
 
