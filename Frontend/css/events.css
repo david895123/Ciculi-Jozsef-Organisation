@@ -3,6 +3,8 @@
     --color-first: hsl(23,42%,50%) ;
     --color-second: hsl(212,35%,35%);
 
+    --color-border: #D9D7B6 ;
+
     --events-font-title: 1.8rem;
     --events-font-date: 0.8rem;
     --events-font-text: 1rem;
@@ -10,7 +12,7 @@
 
 .hero
 {
-    height: 100vh;
+    height: 105vh;
     display: flex;
 
     position: relative;
@@ -33,6 +35,19 @@
     z-index: 0;
     
 }
+
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom,
+        transparent 97%,
+        var(--color-white-background) 100%   
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
 
 #hero-content
 {
@@ -93,6 +108,10 @@
 {
     height: 70%;
     width: auto;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+    transform: rotate(2deg);
+    border: 4px solid var(--color-border);
 }
 
 .text
@@ -110,6 +129,7 @@
     font-size: var(--events-font-title);
     letter-spacing: 10%;
     margin-bottom: 2%;
+    font-weight: 500;
 }
 
 .text h5
@@ -117,6 +137,7 @@
     color: var(--color-text-secondary-light);
     font-size: var(--events-font-date);
     letter-spacing: 5%;
+    font-weight: 300;
 }
 
 .text h4
@@ -125,6 +146,7 @@
     margin-top: 10%;
     font-size: var(--events-font-text);
     letter-spacing: 5%;
+    font-weight: 400;
 }
 
 
