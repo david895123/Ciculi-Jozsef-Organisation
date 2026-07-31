@@ -308,7 +308,13 @@ body
     
     html
     {
-        font-size: 10px;
+        font-size: 8px;
+        
+    }
+
+    body
+    {
+        background-color: #CD201F;
     }
 
 #ig
