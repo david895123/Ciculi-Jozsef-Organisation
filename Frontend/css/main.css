@@ -28,6 +28,8 @@
     --font-size-legal: 0.6rem;
     --font-size-email: 0.75rem;
 
+    
+
 }
 
 @font-face {
@@ -302,10 +304,33 @@ body
 
 
 
-@media (min-width: 768px) {
-    .navbar
+@media (max-width: 768px) {
+    
+    html
     {
-       
-        height: 50;
+        font-size: 10px;
     }
+
+#ig
+{
+    width: 20px;
+    height: 20px;
+    color: #FCAF45;
+}
+
+
+#yt
+{   
+    width: 22px;
+    height: 22px;
+    color: #CD201F;
+}
+
+#fb
+{
+    width: 20px;
+    height: 20px;
+    color: #1877F5;
+}
+    
 }

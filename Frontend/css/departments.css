@@ -224,3 +224,25 @@ body
 }
 
 
+
+@media (max-width: 768px) {
+ 
+    .person img
+    {
+    border-radius: 5%;
+    max-height: 120px;
+    width: auto;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+   
+    }
+
+    .department {
+    position: relative;
+    overflow: hidden;
+    min-height: 30vh;
+    padding-bottom: 10vh;
+  
+   
+}
+    
+}
