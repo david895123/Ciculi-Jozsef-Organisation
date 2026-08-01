@@ -7,7 +7,14 @@
 {
     --color-event:hsl(202,65%,45%);
     --color-event-dark:hsl(202,80%,35%);
+    --color-border: #D9D7B6 ;
     
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 #hero
@@ -18,7 +25,7 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 10vh;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    
 }
 
 #hero::before
@@ -37,7 +44,7 @@
     
 }
 
-.hero::after {
+#hero::after {
     content: '';
     position: absolute;
     inset: 0;
@@ -155,10 +162,10 @@
 .event img
 {
     
-    max-height: 300px;
-    height: 0%;
-    width: auto;
-    flex-shrink: 0; 
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     border-radius: 12px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
     transform: rotate(2deg);
@@ -234,7 +241,10 @@
 
 @media (max-width: 768px) {
     
-  
+    #hero::before
+    {
+        background-position: 76% 50%;
+    }
 
    #hero-top
     {   

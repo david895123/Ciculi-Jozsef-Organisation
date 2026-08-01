@@ -227,6 +227,12 @@ body
 
 @media (max-width: 768px) {
  
+
+    .hero::before
+    {
+        background-position: 80% 50%;
+    }
+
     .person img
     {
     border-radius: 5%;

@@ -60,3 +60,11 @@
     text-align: center;
     font-family: "Montserrat";
 }
+
+@media (max-width: 768px) {
+    
+    .hero::before
+    {
+        background-position: 85%  50%;
+    }
+}
