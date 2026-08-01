@@ -16,42 +16,30 @@
 
      <body>
        
-        <header class="navbar">
-            <ul id="navbarText">
-                <li>
-                      <div class="logo" >
-                       <a href="index.html" class="logo">
-                          <i class="fa-solid fa-cat"></i>
-                        </a>
-                    </div>
-                </li>
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <i class="fa-solid fa-cat"></i>
+            </a>
+        </div>
 
-                <li>
-                    <a href="aboutUs.html" data-i18n="nav.aboutus"></a>
-                </li>
-                <li>
-                     <a href="events.html" data-i18n="nav.events"></a>
-                </li>
-                <li>
-                     <a href="departments.html" data-i18n="nav.departments"></a>
-                </li>
-                <li >
-                     <a href="awards.html" data-i18n="nav.awards"></a>
-                </li>
-            </ul>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
 
-           <div id="languages">
-                <button onclick="loadLanguage('hu')" id="hu">
-                    <img src="assets/pictures/hu.svg" alt="Hungarian">
-                </button>
-                <button onclick="loadLanguage('ro')"id="ro">
-                    <img src="assets/pictures/ro.svg" alt="Romaninan">
-                </button>
-                <button onclick="loadLanguage('en')"id="en">
-                    <img src="assets/pictures/gb.svg" alt="English">
-                </button>
-            </div>
-        </header>
+        <ul id="navbarText">
+            <li><a href="aboutUs.html" data-i18n="nav.aboutus"></a></li>
+            <li><a href="events.html" data-i18n="nav.events"></a></li>
+            <li><a href="departments.html" data-i18n="nav.departments"></a></li>
+            <li><a href="awards.html" data-i18n="nav.awards"></a></li>
+
+        <li id="languages">
+            <button onclick="loadLanguage('hu')" id="hu"><img src="assets/pictures/hu.svg" alt="Hungarian"></button>
+            <button onclick="loadLanguage('ro')" id="ro"><img src="assets/pictures/ro.svg" alt="Romanian"></button>
+            <button onclick="loadLanguage('en')" id="en"><img src="assets/pictures/gb.svg" alt="English"></button>
+        </li>
+        </ul>
+    </header>
 
         <section class="hero">
             <div id="hero-content">
@@ -112,6 +100,7 @@
         
     </body>
 
-     <script src="js/i18n.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/navbar.js"></script>
 
 </html>

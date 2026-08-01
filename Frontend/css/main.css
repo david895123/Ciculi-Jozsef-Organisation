@@ -64,7 +64,7 @@ body
     top: 0;
     left: 0;
     z-index: 9999;
-    height: 40px;
+    height: 50px;
 }
 
 #navbarText
@@ -73,6 +73,7 @@ body
     align-items: flex-start;
     justify-content: center;
     gap: 40px;
+    flex: 1; 
 
 }
 
@@ -99,10 +100,17 @@ body
 
 .logo
 {
+    margin-right: 20px;
+}
+
+.logo a
+{
     display: flex;
     justify-content: center;
     color: var(--color-text-secondary-light);
-    margin-left: 10px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
    
     
 }
@@ -114,6 +122,38 @@ body
     height: 30px;
     width: auto;
 }
+
+.nav-toggle {
+    
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    z-index: 10000;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    display: block;
+    background: var(--color-text-secondary-light);
+    height: 2px;
+    width: 24px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
 
 #languages
 {
@@ -308,14 +348,66 @@ body
     
     html
     {
-        font-size: 8px;
+        font-size: 9px;
         
     }
 
-    body
-    {
-        background-color: #CD201F;
+    .nav-toggle {
+        display: block;    /* ← add this */
     }
+
+    .navbar
+    {
+        height: 60px;
+    }
+
+    .logo a
+    {
+        font-size: 2.5rem;
+    }
+
+    
+ #navbarText {
+        position: fixed;
+        top: 50px;             
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        background-color: var(--color-primary);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        margin-left: 0;
+    }
+
+    #navbarText.open {
+        max-height: 400px;      
+    }
+
+    #navbarText li {
+        width: 100%;
+        padding: 12px 60px;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #navbarText li a {
+        display: block;
+        min-height: 44px;      
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+    }
+
+    #languages {
+        padding: 12px 20px;
+        justify-content: flex-start;
+    }
+
+
+
+
 
 #ig
 {
