@@ -1,7 +1,7 @@
 
 :root{
     /*Page colors*/
-    --color-white-background: #F4F3F2;
+    --color-white-background: #F5F5F5        ;
     --color-primary: #0A7C6E;
     --color-secondary: #ADE5ED;
     --color-tertiary: #F67E34;
@@ -9,8 +9,13 @@
     --color-accent: #F17325;
 
     /*Font colors*/
-    --color-text-primary-dark: #151515;
-    --color-text-secondary-darl: #3E3D3D;
+    --color-text-primary-dark: #222222;
+    --color-text-secondary-dark: #333333;
+    --color-text-obsidian: #0B1215 ;
+    --color-text-charcoal: #2C2C2C;
+    --color-text-5: #555555;
+    --color-text-granite: #616161;
+    
     --color-text-primary-light: #F2F2F2;
     --color-text-secondary-light: #EFEFEF;
     --color-text-tertiary-light: #B5B5B5;
