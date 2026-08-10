@@ -1,7 +1,7 @@
 
 :root{
     /*Page colors*/
-    --color-white-background: #F5F5F5        ;
+    --color-white-background: #F5F5F5;
     --color-primary: #0A7C6E;
     --color-secondary: #ADE5ED;
     --color-tertiary: #F67E34;
@@ -33,6 +33,28 @@
     --font-size-legal: 0.6rem;
     --font-size-email: 0.75rem;
 
+
+    --space-xxs: 4px;
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 40px;
+    --space-xl: 64px;
+    --space-xxl: 128px;
+    --space-xxxl: 192px;
+
+    --font-weight-xl: 700;   
+    --font-weight-lg: 600;   
+    --font-weight-md: 500;   
+    --font-weight-sm: 400;   
+    --font-weight-xs: 300;  
+    
+    --letter-spacing-sm: 0.03em;
+    --letter-spacing-md: 0.05em;
+    --letter-spacing-lg: 0.07em;
+
+    --line-height-heading: 1.2;
+    --line-height-body: 1.5;
     
 
 }
@@ -353,7 +375,7 @@ body
     
     html
     {
-        font-size: 9px;
+        font-size: 7px;
         
     }
 
