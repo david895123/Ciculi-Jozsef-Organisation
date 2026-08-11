@@ -33,6 +33,14 @@
     --font-size-legal: 0.6rem;
     --font-size-email: 0.75rem;
 
+    --font-xxs: 0.7rem;
+    --font-xs: 1rem;
+    --font-s: 1.2rem;
+    --font-md: 1.5rem;
+    --font-lg: 2rem;
+    --font-xl: 2.5rem;
+    --font-xxl: 4.8rem;
+
 
     --space-xxs: 4px;
     --space-xs: 8px;

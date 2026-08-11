@@ -1,6 +1,6 @@
 *
 {
-    --color-orange: hsl(23,50%,60%);
+    --color-orange: #f8ba94;
     --color-blue: hsl(212,25%,45%);
     --color-purepule: hsl(285,20%,50%);
     --color-green: hsl(152,35%,53%);
@@ -43,10 +43,7 @@ body
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom,
-        transparent 97%,
-        var(--color-white-background) 100%   
-    );
+  
     z-index: 1;
     pointer-events: none;
 }
@@ -78,11 +75,26 @@ body
     font-family: "Montserrat";
 }
 
+
+/*---Content---*/
+
+.divider
+ {
+    border: none;           
+    height: 2px;
+    
+    background: linear-gradient(90deg, transparent 0%, var(--color-text-5) 10% 90%, transparent 100%);
+   
+    width: 85vw;            
+    margin: var(--space-lg) auto; 
+
+}
+
 .department {
     position: relative;
     overflow: hidden;
-    min-height: 90vh;
-    padding-bottom: 10vh;
+    min-height: 40vh;
+    
   
    
 }
@@ -91,80 +103,54 @@ body
 
 
 
-.content-ciculi
+.content
 {   
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20%;
-    background: linear-gradient(165deg,
-        var(--color-orange) 20%,
-        var(--color-blue) 80%
-       
-    );
+ 
          
 
-    padding-bottom: 3%;
-    padding-top: 4%;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-
-   
-}
-
-.content-zalau
-{   
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20%;
-    background: linear-gradient(165deg,
-        var(--color-orange)  20%,
-        var(--color-purepule) 100%
-    ); 
-         
-    padding: 40px 32px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-    padding-bottom: 3%;
-    padding-top: 4%;
-
-   
-}
-
-.content-cluj
-{   
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background:  linear-gradient(165deg,
-        var(--color-orange)  20%,
-        var(--color-green) 100%
-        
-    );   
-     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
     
-    padding: 40px 32px;
-    padding-bottom: 3%;
-    padding-top: 4%;
-   
 }
 
 
-
-
-
-
-#department-title
+.department-title
 {
-    margin-top: 3%;
     font-size: var(--font-size-subtitle);
-    letter-spacing: 10%;
-    color: var(--color-text-primary-light);
-    font-weight: 500;
-    margin-bottom: 5%;
+    letter-spacing: var(--letter-spacing-lg);
+    color: var(--color-text-primary);
+    font-weight: var(--font-weight-md);
     text-align: center;
+}
+
+#ciculi-title
+{
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: var(--color-orange);
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+#zalau-title
+{
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: var(--color-purepule);
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+#cluj-title
+{
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: var(--color-green);
+    margin-bottom: 5%;
+    margin-top: 3%;
 }
 
 .persons
@@ -212,14 +198,14 @@ body
 {
     font-size: var(--font-size-text);
     letter-spacing: 5%;
-    color: var(--color-text-secondary-light);
+    color: var(--color-text-secondary);
     font-weight: 400;
 }
 
 .person-text h4
 {
     letter-spacing: 3%;
-    color:var(--color-text-secondary-light);
+    color:var(--color-text-secondary);
     font-weight: 300;
 }
 

@@ -67,64 +67,77 @@
 {
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
-    letter-spacing: 8%;
+    letter-spacing: var(--letter-spacing-lg);
     text-align: center;
     font-family: "Montserrat";
 }
 
+
+.small-divider
+{
+    border: none;           
+    height: 1px;
+    
+    opacity: 80%;
+   
+    width: 20vw;    
+    background: linear-gradient(90deg, transparent 0%, var(--color-text-granite) 5% 95%, transparent 100%);
+           
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.divider
+ {
+    border: none;           
+    height: 2px;
+    
+    background: linear-gradient(90deg, transparent 0%, var(--color-text-5) 10% 90%, transparent 100%);
+   
+    width: 85vw;            
+    margin: var(--space-lg) auto; 
+
+}
+
+.event, .content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .event
 {
-    min-height: 70vh;
-    
-   
-    
-     
-    
+    min-height: 40vh;
+
 }
 
 
 
 
-.content-2
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background: linear-gradient(165deg,var(--color-second) 20%, var(--color-second-dark) 100%) ;
-    padding-left: 12%;
-    padding-right: 12%;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-    padding-bottom: 5%;
-    padding-top: 4%;
-    
-    
-}
+
 
 .content
 {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items:center;
     height: 100%;
-    background: linear-gradient(165deg,var(--color-first) 20%, var(--color-first-dark) 100%) ;
-    padding-left: 12%;
-    padding-right: 12%;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-    padding-bottom: 5%;
-    padding-top: 4%;
+   
+    padding-left: var(--space-xxl);
+    padding-right: var(--space-xxl);
+   
+ 
 }
 
 .event img
 {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 400px;
+    width: 95%;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
-    transform: rotate(2deg);
-    border: 4px solid var(--color-border);
+    max-width: 450px;
+    flex-shrink: 0; 
+
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
+    
 }
 
 .text
@@ -133,36 +146,112 @@
     min-width: 0; 
     height: 100%;
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
-    margin-right: 10%;
+    margin-right: var(--space-xxxl);
     
 }
 
+
+
 .text h3
 {
-    color: var(--color-text-primary-light);
+  color: var(--color-text-primary-dark);
+    background-color: #f8ba94;
     font-size: var(--events-font-title);
-    letter-spacing: 10%;
-    margin-bottom: 2%;
-    font-weight: 500;
+    padding: 4px 10px;
+    letter-spacing: var(--letter-spacing-lg);
+    margin-bottom: var(--space-xs);
+    font-weight: var(--font-weight-md);
+    line-height: var(--line-height-heading);
 }
 
 .text h5
 {
-    color: var(--color-text-secondary-light);
+    color: var(--color-text-obsidian);
     font-size: var(--events-font-date);
-    letter-spacing: 5%;
-    font-weight: 300;
+    letter-spacing: var(--letter-spacing-md);
+    font-weight: var(--font-weight-xs);
 }
 
 .text h4
 {
-    color: var(--color-text-secondary-light);
-    margin-top: 10%;
+    color: var(--color-text-primary-dark);
     font-size: var(--events-font-text);
-    letter-spacing: 5%;
-    font-weight: 400;
+    letter-spacing: var(--letter-spacing-md);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-sm);
+}
+
+@media (max-width: 1024px) {
+  .event img {
+    max-width: 300px;
+  }
+
+  .text
+  {
+        margin-right: var(--space-lg);
+  }
+
+}
+
+@media (max-width: 768px) {
+ 
+
+.content
+{
+    padding-left: var(--space-xl);
+    padding-right: var(--space-xl);
+}
+
+.event
+{
+    min-height: 20vh;
+}
+
+.small-divider
+{
+    margin-top: var(--space-xs);
+    margin-bottom: var(--space-xs);
+}
+
+.event img
+{
+    max-width: 200px;
 }
 
 
 
+}
+
+@media (max-width: 600px) {
+
+.content
+{
+    padding-left: var(--space-lg);
+    padding-right: var(--space-lg);
+}
+
+  .event img {
+    max-width: 180px;
+  }
+
+ .text
+{
+        margin-right: var(--space-md);
+}
+
+}
+
+@media (max-width: 480px) {
+
+.content
+{
+    padding-left: var(--space-md);
+    padding-right: var(--space-md);
+}
+
+  .event img {
+    max-width: 140px;
+  }
+}
