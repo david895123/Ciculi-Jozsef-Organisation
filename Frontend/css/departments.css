@@ -5,6 +5,11 @@
     --color-purepule: hsl(285,20%,50%);
     --color-green: hsl(152,35%,53%);
 
+    --image-size-normal: 200px;
+    --image-size-1024: 150px;
+    --image-size-768: 130px;
+    --image-size-600: 120px;
+    --image-size-480: 100px;
    
 }
 
@@ -128,6 +133,7 @@ body
 
 #ciculi-title
 {
+    margin: 0px 20px;
     display: inline-block;
     padding: 4px 10px;
     background-color: var(--color-orange);
@@ -137,6 +143,7 @@ body
 
 #zalau-title
 {
+    margin: 0px 20px;
     display: inline-block;
     padding: 4px 10px;
     background-color: var(--color-purepule);
@@ -146,6 +153,7 @@ body
 
 #cluj-title
 {
+    margin: 0px 20px;
     display: inline-block;
     padding: 4px 10px;
     background-color: var(--color-green);
@@ -179,7 +187,7 @@ body
 .person img
 {
     border-radius: 5%;
-    max-height: 200px;
+    max-width: var(--image-size-normal);
     width: auto;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
    
@@ -210,9 +218,23 @@ body
 }
 
 
+@media (max-width: 1024px) {
+
+
+    .person img
+    {
+        max-width: var(--image-size-1024);
+    }
+
+}
 
 @media (max-width: 768px) {
  
+    #hero-content h1
+    {
+        font-size: 3.8rem;
+    }
+
 
     .hero::before
     {
@@ -221,20 +243,48 @@ body
 
     .person img
     {
-    border-radius: 5%;
-    max-height: 120px;
-    width: auto;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-   
+        border-radius: 5%;
+        max-width: var(--image-size-768);
+        width: auto;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
     }
 
-    .department {
-    position: relative;
-    overflow: hidden;
-    min-height: 30vh;
-    padding-bottom: 10vh;
-  
-   
-}
+    .department 
+    {
+        position: relative;
+        overflow: hidden;
+        min-height: 20vh;
+    }
+
     
+    .persons
+    {
+        margin-top: var(--space-md);
+    }
+   
+    
+}
+
+
+
+@media (max-width: 600px) {
+
+
+    .person img
+    {
+        max-width: var(--image-size-600);
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    .person img
+    {
+        max-width: var(--image-size-480);
+    }
+
 }

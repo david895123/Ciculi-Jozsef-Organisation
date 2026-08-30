@@ -9,6 +9,12 @@
     --events-font-title: 1.8rem;
     --events-font-date: 0.8rem;
     --events-font-text: 1rem;
+
+    /*Adjus image size depanding on screen width*/
+    --image-size-1024: 300px;
+    --image-size-768: 180px;
+    --image-size-600: 160px;
+    --image-size-480: 140px;
 }
 
 .hero
@@ -185,7 +191,7 @@
 
 @media (max-width: 1024px) {
   .event img {
-    max-width: 300px;
+    max-width: var(--image-size-1024);
   }
 
   .text
@@ -197,6 +203,12 @@
 
 @media (max-width: 768px) {
  
+
+    #hero-content h1
+    {
+        font-size: 3.8rem;
+    }
+
 
 .content
 {
@@ -217,7 +229,7 @@
 
 .event img
 {
-    max-width: 200px;
+    max-width: var(--image-size-768);
 }
 
 
@@ -233,7 +245,7 @@
 }
 
   .event img {
-    max-width: 180px;
+    max-width: var(--image-size-600);
   }
 
  .text
@@ -252,6 +264,6 @@
 }
 
   .event img {
-    max-width: 140px;
+    max-width: var(--image-size-480);
   }
 }
