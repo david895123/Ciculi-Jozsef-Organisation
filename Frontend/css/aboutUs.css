@@ -36,7 +36,6 @@
     pointer-events: none;
 }
 
-
 #hero-content
 {
     margin-top: 30vh;
@@ -48,8 +47,7 @@
     width: 100%;
     padding: 40px 24px;
     z-index: 1;
-    padding: 7vh;
-    
+    padding: 7vh;    
 }
 
 #hero-content h1

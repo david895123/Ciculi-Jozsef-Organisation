@@ -1,10 +1,8 @@
 Functional:
--font sizes at different screen sizes
 -----------------------------------------------
 Design:
 -departments highlight color
 -fonts, font weights
--navbar logo proportions
 -index hero section 
 ------------------------------------------------
 Other:

@@ -116,22 +116,14 @@
 
 }
 
-
-
-
-
-
 .content
 {
     display: flex;
     justify-content: center;
     align-items:center;
     height: 100%;
-   
     padding-left: var(--space-xxl);
-    padding-right: var(--space-xxl);
-   
- 
+    padding-right: var(--space-xxl); 
 }
 
 .event img
@@ -140,10 +132,8 @@
     height: auto;
     max-width: 450px;
     flex-shrink: 0; 
-
     border-radius: 8px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
-    
 }
 
 .text
@@ -155,14 +145,11 @@
     align-items: flex-start;
     flex-direction: column;
     margin-right: var(--space-xxxl);
-    
 }
-
-
 
 .text h3
 {
-  color: var(--color-text-primary-dark);
+    color: var(--color-text-primary-dark);
     background-color: #f8ba94;
     font-size: var(--events-font-title);
     padding: 4px 10px;
@@ -203,67 +190,61 @@
 
 @media (max-width: 768px) {
  
-
     #hero-content h1
     {
         font-size: 3.8rem;
     }
 
+    .content
+    {
+        padding-left: var(--space-xl);
+        padding-right: var(--space-xl);
+    }   
 
-.content
-{
-    padding-left: var(--space-xl);
-    padding-right: var(--space-xl);
-}
+    .event
+    {
+        min-height: 20vh;
+    }
 
-.event
-{
-    min-height: 20vh;
-}
+    .small-divider
+    {
+        margin-top: var(--space-xs);
+        margin-bottom: var(--space-xs);
+    }
 
-.small-divider
-{
-    margin-top: var(--space-xs);
-    margin-bottom: var(--space-xs);
-}
-
-.event img
-{
-    max-width: var(--image-size-768);
-}
-
-
-
+    .event img
+    {
+        max-width: var(--image-size-768);
+    }
 }
 
 @media (max-width: 600px) {
 
-.content
-{
-    padding-left: var(--space-lg);
-    padding-right: var(--space-lg);
-}
+    .content
+    {
+        padding-left: var(--space-lg);
+        padding-right: var(--space-lg);
+    }
 
-  .event img {
-    max-width: var(--image-size-600);
-  }
+    .event img {
+        max-width: var(--image-size-600);
+    }
 
- .text
-{
+    .text
+    {
         margin-right: var(--space-md);
-}
-
+    }
 }
 
 @media (max-width: 480px) {
 
-.content
-{
-    padding-left: var(--space-md);
-    padding-right: var(--space-md);
-}
+    .content
+    {
+        padding-left: var(--space-md);
+        padding-right: var(--space-md);
+    }   
 
-  .event img {
-    max-width: var(--image-size-480);
-  }
+    .event img {
+        max-width: var(--image-size-480);
+    }
 }

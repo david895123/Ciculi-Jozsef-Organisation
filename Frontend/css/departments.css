@@ -255,20 +255,16 @@ body
         overflow: hidden;
         min-height: 20vh;
     }
-
-    
+ 
     .persons
     {
         margin-top: var(--space-md);
     }
-   
-    
+       
 }
 
 
-
 @media (max-width: 600px) {
-
 
     .person img
     {
@@ -276,7 +272,6 @@ body
     }
 
 }
-
 
 
 @media (max-width: 480px) {
