@@ -78,11 +78,11 @@
 /*--------------- Paragraphs ---------------*/
 .paragraph
 {
-   padding-left: 250px;
-   padding-right: 250px;
+   padding-left: 200px;
+   padding-right: 200px;
    display: flex;
    align-items: flex-start;
-   gap: 200px;
+   gap: 150px;
    align-items: center;
 }
 
@@ -94,6 +94,12 @@
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
+.paragraph div
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
 .paragraph h4
 {
@@ -104,10 +110,46 @@
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-md);
     align-items: center;
+    
+}
+
+
+
+@media (max-width: 1024px) {
+
+
+    .paragraph
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+        gap: 100px;
+  
+    }
+
+    .paragraph img
+    {
+        max-width: var(--image-size-1024);
+    }
+
 }
 
 @media (max-width: 768px) {
     
+    .paragraph
+    {
+        padding-left: 100px;
+        padding-right: 100px;
+        gap: 0px;
+        justify-content: center;
+  
+    }
+
+    
+    .paragraph h4
+    {
+        text-align: center;
+    }
+
     #hero-content h1
     {
         font-size: 3.8rem;
@@ -117,4 +159,36 @@
     {
         background-position: 85%  50%;
     }
+
+    .paragraph img
+    {
+        max-width: 0px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+     .paragraph
+    {
+        padding-left: 70px;
+        padding-right: 70px;
+       
+    }
+    
+
+}
+
+
+@media (max-width: 480px) {
+
+    .paragraph
+    {
+        padding-left: 50px;
+        padding-right: 50px;
+       
+    }  
+
+
 }
