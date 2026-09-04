@@ -27,7 +27,7 @@ img {
 
 #hero
 {
-    height: 105vh;
+    height: 100vh;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -69,7 +69,8 @@ img {
     width: 100%;
     padding: 40px 24px;
     z-index: 2;
-    padding: 7vh;
+    padding-top: 7vh;
+
 }
 
 #hero-top
@@ -84,18 +85,19 @@ img {
 
 #hero-content h1
 {
+    font-weight: var(--font-weight-md);
+    font-family: var(--font-title);
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
-    letter-spacing: 15%;
+    letter-spacing: 10%;
     text-align: center;
-    font-family: "Montserrat";
 }
 
 #join-button
 {
     text-decoration: none;
     color: var(--color-text-secondary);
-    font-size: var(--font-size-text);
+    font-size: 1.4rem;
     background-color: var(--color-tertiary);
     padding-left: 2%;
     padding-right: 2%;

@@ -19,12 +19,12 @@
 
 .hero
 {
-    height: 105vh;
+    height: 100vh;
     display: flex;
 
     position: relative;
     overflow: hidden;
-    margin-bottom: 5%;
+    margin-bottom: 10vh;
      
 }
 
@@ -71,11 +71,12 @@
 
 #hero-content h1
 {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-md);
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
     letter-spacing: var(--letter-spacing-lg);
     text-align: center;
-    font-family: "Montserrat";
 }
 
 
@@ -149,6 +150,7 @@
 
 .text h3
 {
+    font-family: var(--font-title);
     color: var(--color-text-primary-dark);
     background-color: #f8ba94;
     font-size: var(--events-font-title);

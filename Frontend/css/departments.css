@@ -20,12 +20,13 @@ body
 
 .hero
 {
-    height: 105vh;
+    height: 100vh;
     display: flex;
 
     position: relative;
     overflow: hidden;
     margin-bottom: 10vh;
+     
 }
 
 .hero::before
@@ -36,28 +37,26 @@ body
     left: -20px;
     bottom: -20px;
     right: -20px;
-    background-image: url('../assets/pictures/ciculi-forest.png');
+    background-image: url('../assets/pictures/2-ciculi-jozsef-konferencia.jpeg');
     background-size: cover;
     background-position: center;
     filter: blur(8px) brightness(0.5);
     z-index: 0;
-
-     
+    
 }
+
 .hero::after {
     content: '';
     position: absolute;
     inset: 0;
-  
+   
     z-index: 1;
     pointer-events: none;
 }
 
 
-
 #hero-content
 {
-     z-index: 2;
     margin-top: 30vh;
     position: relative;
     display: flex;
@@ -73,11 +72,12 @@ body
 
 #hero-content h1
 {
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-md);
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
-    letter-spacing: 8%;
+    letter-spacing: var(--letter-spacing-lg);
     text-align: center;
-    font-family: "Montserrat";
 }
 
 
