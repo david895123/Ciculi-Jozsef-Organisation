@@ -1,3 +1,10 @@
+*{
+    --image-size-1024: 300px;
+    --image-size-768: 180px;
+    --image-size-600: 160px;
+    --image-size-480: 140px;
+}
+
 .hero
 {
     height: 100vh;
@@ -71,36 +78,32 @@
 /*--------------- Paragraphs ---------------*/
 .paragraph
 {
-   padding-left: var(--space-xxl);
-   padding-right: var(--space-xxl);
+   padding-left: 250px;
+   padding-right: 250px;
    display: flex;
-   flex-direction: column;
    align-items: flex-start;
-   gap: var(--space-md);
+   gap: 200px;
+   align-items: center;
 }
 
-
-
-.paragraph h2
+.paragraph img
 {
-    display: inline-block;
-    color: var(--color-text-primary-dark);
-    background-color: #f8ba94;
-    font-size: 1.8rem;
-    padding: 4px 10px;
-    letter-spacing: var(--letter-spacing-lg);
-    margin-bottom: var(--space-xs);
-    font-weight: var(--font-weight-md);
-    line-height: var(--line-height-heading);
+    max-width: 300px;
+    flex-shrink: 0; 
+    border-radius: 8px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
+
 
 .paragraph h4
 {
+    text-indent: 2em;
     color: var(--color-text-primary-dark);
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: var(--letter-spacing-md);
     line-height: var(--line-height-body);
     font-weight: var(--font-weight-md);
+    align-items: center;
 }
 
 @media (max-width: 768px) {
