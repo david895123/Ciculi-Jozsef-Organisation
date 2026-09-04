@@ -28,10 +28,6 @@
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to bottom,
-        transparent 97%,
-        var(--color-white-background) 100%   
-    );
     z-index: 1;
     pointer-events: none;
 }
@@ -57,6 +53,53 @@
     letter-spacing: 8%;
     text-align: center;
     font-family: "Montserrat";
+}
+
+.divider
+ {
+    border: none;           
+    height: 2px;
+    
+    background: linear-gradient(90deg, transparent 0%, var(--color-text-5) 10% 90%, transparent 100%);
+   
+    width: 85vw;            
+    margin: var(--space-lg) auto; 
+
+}
+
+/*--------------- Paragraphs ---------------*/
+.paragraph
+{
+   padding-left: var(--space-xxl);
+   padding-right: var(--space-xxl);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: var(--space-md);
+}
+
+
+
+.paragraph h2
+{
+    display: inline-block;
+    color: var(--color-text-primary-dark);
+    background-color: #f8ba94;
+    font-size: 1.8rem;
+    padding: 4px 10px;
+    letter-spacing: var(--letter-spacing-lg);
+    margin-bottom: var(--space-xs);
+    font-weight: var(--font-weight-md);
+    line-height: var(--line-height-heading);
+}
+
+.paragraph h4
+{
+    color: var(--color-text-primary-dark);
+    font-size: 1rem;
+    letter-spacing: var(--letter-spacing-md);
+    line-height: var(--line-height-body);
+    font-weight: var(--font-weight-md);
 }
 
 @media (max-width: 768px) {
