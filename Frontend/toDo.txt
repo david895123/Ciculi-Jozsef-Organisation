@@ -1,11 +1,9 @@
 Functional:
 -----------------------------------------------
 Design:
--departments highlight color
--fonts, font weights
--index hero section 
+-mobile test and changes if necessary especially to the events page where the images look kinda off
 ------------------------------------------------
 Other:
 -images for the departments tab
--Text for the about us page
+
 

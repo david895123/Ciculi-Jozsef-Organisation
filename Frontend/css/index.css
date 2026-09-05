@@ -42,7 +42,7 @@ img {
     left: -20px;
     bottom: -20px;
     right: -20px;
-    background-image: url('../assets/pictures/ciculi_hero.png');
+    background-image: url('../assets/pictures/ciculi_hero-comp.png');
     background-size: cover;
     background-position: center;
     filter: blur(8px) brightness(0.5);
@@ -89,7 +89,7 @@ img {
     font-family: var(--font-title);
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
-    letter-spacing: 10%;
+    letter-spacing: 8%;
     text-align: center;
 }
 
@@ -190,11 +190,12 @@ img {
     flex-direction: column;
     align-items: flex-start;
     flex: 1;                
-    min-width: 0;    
+    min-width: 0;
+    margin-bottom: 30px;    
 }
 
 .text h3
-{
+{   
     color: var(--color-text-secondary);
     font-size: var(--font-lg);
     letter-spacing: var(--letter-spacing-lg);
@@ -204,7 +205,7 @@ img {
 .text h4
 {
     color: var(--color-text-secondary);
-    margin-top: 2%;
+    margin-top: 5px;
     font-size: var(--font-md);
     letter-spacing: 5%;
     font-weight: 400;
@@ -212,13 +213,14 @@ img {
 
 #more-button
 {
+    text-align: center;
     margin-top: 5%;
     text-decoration: none;
     color: var(--color-text-secondary);
     font-size: 1.4rem;
     background-color: var(--color-tertiary);
-    padding-left: 2%;
-    padding-right: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
     padding-top: 1%;
     padding-bottom: 1%;
     border-color: transparent;
@@ -359,6 +361,8 @@ img {
     #more-button
     {
         margin-top: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
         width: 70px;
         font-size: 1.5rem;
         border-radius: 50px; 
@@ -380,6 +384,12 @@ img {
     {
         max-width: var(--image-size-480);
         height: auto;    
+    }
+
+    
+    .content
+    {   
+        gap: 0px;
     }
 }
 
