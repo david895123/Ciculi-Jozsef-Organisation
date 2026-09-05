@@ -67,13 +67,11 @@
     --line-height-heading: 1.2;
     --line-height-body: 1.5;
     
-
-}
-
-@font-face {
     font-family: var(--font-text);
-    src: url(../assets/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+
 }
+
+
 
 
 

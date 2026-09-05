@@ -72,11 +72,11 @@ body
 
 #hero-content h1
 {
-    font-family: var(--font-title);
     font-weight: var(--font-weight-md);
+    font-family: var(--font-title);
     font-size: var(--font-size-title);
     color: var(--color-text-secondary-light);
-    letter-spacing: var(--letter-spacing-lg);
+    letter-spacing: 8%;
     text-align: center;
 }
 
